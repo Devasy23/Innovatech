@@ -1,0 +1,200 @@
+﻿Problem Statement
+
+
+Your task is to create a conversational AI model using Google Dialogflow that can understand natural language queries for diamonds and generate filtering parameters for a large inventory of diamond data. The diamond data consists of more than 100,000 rows and includes various attributes such as shape, size, weight, clarity, color, and cut.
+
+
+The model should be able to understand a wide range of natural language queries, including those with common typing errors, short forms, and specific shortcuts used in the diamond industry. The queries can include parameters such as shape, size, weight, clarity, color, and cut, and the model should be able to interpret these parameters even when they are expressed in ranges or with variations in wording.
+
+Once the model understands the query, it should generate filtering parameters that can be used to search the diamond inventory and return matching results. The filtering parameters can include a combination of various attributes such as shape, size, weight, clarity, color, and cut, and should be optimized for accuracy and efficiency.
+
+
+A diamond can have many properties like REPORTNO, SHAPE, WEIGHT, CUT, POLISH, etc. You can read about these properties and characteristics in detail at: https://diamondbuzz.blog/diamond-properties-and-characteristics/.
+
+
+To accomplish this task, you will need to use Google Dialogflow to build a conversational AI model that can understand natural language queries and generate filtering parameters. You will also need to work with the diamond inventory data and use data processing and analysis techniques to optimize the filtering parameters and improve the accuracy of the model.
+
+
+In the given dataset, each column represents a property of a diamond, and each row is an individual diamond.
+
+
+Dataset Description:
+https://colab.research.google.com/drive/1LCqzDfJQMhy82R0yYPhWbq8_Szua8XTf?usp=sharing
+
+
+NOTES:
+* We will look for a range of filters and the robustness of the application. 
+* We are not looking for any frontend. It should be API based or should be easily integrated into Google Co-lab.
+* This will be an NLP project but using Google Dialogflow.
+* Dialogflow, in this case, should understand diamond related properties and language.
+
+
+
+
+Prizes:
+The top three teams will receive cash prizes as follows:
+1st place: Rs. 15,000
+2nd place: Rs. 10,000
+3rd place: Rs. 5,000
+In addition, there will be three consolation prizes of Rs. 1,000 each.
+
+
+Good luck, and happy hacking!
+
+
+
+
+
+
+
+
+Examples : 
+
+
+User Input:
+* data containing reportno, shape, per, total for diamonds of shape round, oval, and heart
+
+
+Output:
+* Dialogflow should generate the following filter:
+Columns = [reportno, shape, per, total]
+        Shape = [round, oval, heart]
+
+
+User Input:
+*  I am looking for vvs diamond of g to i color of size around 1 carat
+
+
+Output:
+* Dialogflow should generate the following filter:
+Columns = [(all columns)]
+        Weight = [0.85 - 1.15]
+Color = [g, h, i]
+Clarity = [vvs]
+
+
+
+
+Below are some of the example queries(input):
+
+
+1. can you show me a RB 2ct range with VVS+ and DEF?
+2. looking for pear shape 1.5-2ct with VS1+ and H-K color range
+3. show me oval 1.75-2.25ct range with SI1+ and I-J color range
+4. looking for marquise 1.2-1.4ct with VS2+ and D-G color range
+5. show me princess 1.5-1.75ct with VS1+ and F-H color range
+6. looking for emerald cut 2.5-3ct with SI2+ and G-K color range
+7. show me heart shape 1.25-1.5ct with VVS2+ and D-F color range
+8. looking for cushion 2-2.5ct with SI1+ and E-H color range
+9. show me radiant cut 1.75-2ct with VS1+ and I-J color range
+10. looking for asscher cut 1.25-1.5ct with VVS2+ and G-I color range
+11. Can you find me RB 1.5-2ct range with VS2+ and I-K color range?
+12. I'm looking for princess cut 1.25-1.5ct range with SI1+ and D-F color range.
+13. Can you show me cushion cut 2-2.5ct range with VS1+ and G-H color range?
+14. I need emerald cut 2.5-3ct range with VVS2+ and E-G color range.
+15. Can you find me marquise 1.5-1.75ct range with VS1+ and H-J color range?
+16. I'm looking for pear shape 1.75-2ct range with SI1+ and F-H color range.
+17. Can you show me RB 2.5-3ct range with VS2+ and D-F color range?
+18. I need oval 1.5-1.75ct range with VVS2+ and G-I color range.
+19. Can you find me cushion 1.75-2ct range with VS1+ and D-G color range?
+20. I'm looking for princess cut 1.5-1.75ct range with SI2+ and E-G color range.
+21. Can you show me emerald cut 1.25-1.5ct range with VS1+ and H-J color range?
+22. I need RB 1.75-2ct range with VVS2+ and F-H color range.
+23. Can you find me pear shape 1.5-1.75ct range with VS2+ and D-F color range?
+24. I'm looking for cushion cut 1.5-1.75ct range with SI1+ and H-J color range.
+25. Can you show me marquise 1.75-2ct range with VS1+ and E-G color range?
+26. I need RB 1-1.5ct range with VVS2+ and D-F color range.
+27. Can you find me oval 1.75-2ct range with VS1+ and H-J color range?
+28. I'm looking for princess cut 2-2.5ct range with VS2+ and E-G color range.
+29. Can you show me cushion cut 1-1.5ct range with SI1+ and F-H color range?
+30. I need emerald cut 1.5-1.75ct range with VVS2+ and D-F color range.
+31. Can you find me a RB weighing between 1.2 to 1.5 ct with VS1 clarity and G color?
+32. I'm looking for a 2 ct princess cut diamond with SI2 clarity and H color.
+33. Can you show me an oval diamond weighing 1.75 ct with VVS2 clarity and D color?
+34. I need a 1.5 ct emerald cut diamond with VS1 clarity and I color.
+35. Can you find me a 1.25 ct pear shaped diamond with VS2 clarity and F color?
+36. I'm looking for a cushion cut diamond with 1.75 ct weight, VVS1 clarity, and E color.
+37. Can you show me a marquise diamond with 2.5 ct weight, VS2 clarity, and G color?
+38. I need a 1 ct RB with VVS2 clarity and J color.
+39. Can you find me a princess cut diamond with 1.25 ct weight, SI1 clarity, and H color?
+40. I'm looking for an emerald cut diamond weighing 2 ct with VVS2 clarity and F color.
+41. Can you show me an oval diamond with 1.5 ct weight, VS1 clarity, and G color?
+42. I need a 1.75 ct pear shaped diamond with SI1 clarity and D color.
+43. Can you find me a cushion cut diamond with 2 ct weight, VS2 clarity, and H color?
+44. I'm looking for a marquise diamond with 1.5 ct weight, VVS1 clarity, and E color.
+45. Can you show me an RB weighing 2.25 ct with VS1 clarity and D color?
+46. I need a 1.75 ct princess cut diamond with SI2 clarity and G color.
+47. Can you find me an emerald cut diamond with 1.25 ct weight, VVS1 clarity, and H color?
+48. I'm looking for an oval diamond with 1.5 ct weight, VS2 clarity, and E color.
+49. Can you show me a cushion cut diamond weighing 1.75 ct with SI1 clarity and F color?
+50. I need a 2 ct pear shaped diamond with VVS2 clarity and D color.
+51. I'm looking for a pair of RBs, each weighing 0.75 ct with VS1 clarity and G color.
+52. Can you find me a pair of princess cut diamonds, each weighing 1.25 ct with VVS2 clarity and F color?
+53. I need a single 1.5 ct oval diamond with VS1 clarity and D color.
+54. Can you show me a pair of emerald cut diamonds, each weighing 2 ct with VVS1 clarity and E color?
+55. I'm looking for a pair of cushion cut diamonds, each weighing 1.75 ct with VS2 clarity and H color.
+56. Can you find me a single marquise diamond with 1.5 ct weight, VS1 clarity, and G color?
+57. I need a pair of RBs, each weighing 1 ct with SI1 clarity and J color.
+58. Can you show me a pair of princess cut diamonds, each weighing 1.5 ct with VVS2 clarity and G color?
+59. I'm looking for a single 2 ct emerald cut diamond with VS1 clarity and F color.
+60. Can you find me a pair of oval diamonds, each weighing 1.25 ct with VS2 clarity and E color?
+61. I need a pair of cushion cut diamonds, each weighing 2 ct with VVS1 clarity and H color.
+62. Can you show me a single pear shaped diamond with 1.75 ct weight, SI1 clarity, and D color?
+63. I'm looking for a pair of RBs, each weighing 1.5 ct with VVS2 clarity and H color.
+64. Can you find me a pair of princess cut diamonds, each weighing 2 ct with VS1 clarity and G color?
+65. I need a single 1.5 ct emerald cut diamond with VVS2 clarity and D color.
+66. Can you show me a pair of oval diamonds, each weighing 1.75 ct with VVS1 clarity and F color?
+67. I'm looking for a pair of cushion cut diamonds, each weighing 1.5 ct with VS2 clarity and G color.
+68. Can you find me a single marquise diamond with 2 ct weight, VVS2 clarity, and E color?
+69. I need a pair of RBs, each weighing 1.25 ct with VS1 clarity and J color.
+70. Can you show me a pair of princess cut diamonds, each weighing 1.75 ct with VVS2 clarity and E color?
+71. I'm looking for a pair of RBs, each weighing 0.75 ct with VS1 clarity, G color, and Excellent cut.
+72. Can you find me a pair of princess cut diamonds, each weighing 1.25 ct with VVS2 clarity, F color, and Very Good cut?
+73. I need a single 1.5 ct oval diamond with VS1 clarity, D color, and Excellent cut.
+74. Can you show me a pair of emerald cut diamonds, each weighing 2 ct with VVS1 clarity, E color, and Good cut?
+75. I'm looking for a pair of cushion cut diamonds, each weighing 1.75 ct with VS2 clarity, H color, and Excellent cut.
+76. Can you find me a single marquise diamond with 1.5 ct weight, VS1 clarity, G color, and Very Good cut?
+77. I need a pair of RBs, each weighing 1 ct with SI1 clarity, J color, and Good cut.
+78. Can you show me a pair of princess cut diamonds, each weighing 1.5 ct with VVS2 clarity, G color, and Excellent cut?
+79. I'm looking for a single 2 ct emerald cut diamond with VS1 clarity, F color, and Good cut.
+80. Can you find me a pair of oval diamonds, each weighing 1.25 ct with VS2 clarity, E color, and Very Good cut?
+81. I need a pair of cushion cut diamonds, each weighing 2 ct with VVS1 clarity, H color, and Excellent cut.
+82. Can you show me a single pear shaped diamond with 1.75 ct weight, SI1 clarity, D color, and Very Good cut?
+83. I'm looking for a pair of RBs, each weighing 1.5 ct with VVS2 clarity, H color, and Good cut.
+84. Can you find me a pair of princess cut diamonds, each weighing 2 ct with VS1 clarity, G color, and Very Good cut?
+85. I need a single 1.5 ct emerald cut diamond with VVS2 clarity, D color, and Excellent cut.
+86. Can you show me a pair of oval diamonds, each weighing 1.75 ct with VVS1 clarity, F color, and Good cut?
+87. I'm looking for a pair of cushion cut diamonds, each weighing 1.5 ct with VS2 clarity, G color, and Very Good cut.
+88. Can you find me a single marquise diamond with 2 ct weight, VVS2 clarity, E color, and Excellent cut?
+89. I need a pair of RBs, each weighing 1.25 ct with VS1 clarity, J color, and Good cut.
+90. Can you show me a pair of princess cut diamonds, each weighing 1.75 ct with VVS2 clarity, E color, and Very Good cut?
+91. P emd 1-2ct ovl vs g-k
+92. L pear 1.5-2.5ct vvs d-j vg+
+93. RB 1-1.5ct vs1+ ex ex d-f
+94. ECU 2-3ct vs2 h-j ex ex none
+95. MR 0.5-1ct si2+ d-h vg+
+96. PS 1-1.5ct vs1+ ex ex g-k
+97.  emd 2-3ct vs2+ d-k vg+
+98. ASSC 1-2ct si2+ d-k ex ex none
+99. O emd 0.75-1.25ct vs1+ ex ex d-j
+100. H pear 1-2ct si2+ d-h ex ex none
+101. P emd 2-3ct ov vs2 ex d-f vg+
+102. MR 1-1.5ct si1+ ex ex g-k
+103. RB 0.5-1ct vs2+ ex ex d-f
+104. C emd 1-2ct vs2+ d-k vg+
+105. ASSC 2-3ct si1+ d-k ex ex none
+106. PS 0.5-1ct vs1+ ex ex d-f
+107. L pear 1-1.5ct si2+ ex ex d-j
+108. O emd 1-2ct vs1+ ex ex g-k
+109. H oval 1.5-2ct vs2 ex ex d-f vg+
+110. ECU 1-1.5ct vvs d-j ex ex none
+111. RB 2-3ct vs1 ex ex d-f
+112. MR 2-2.5ct si1+ d-h ex ex none
+113. P emd 1ct+ vs2+ d-k ex ex none
+114. PS 2-3ct vs2+ d-k ex ex none
+115. C emd 1ct+ si1+ d-k ex ex none
+116. H pear 2-3ct vs1+ ex ex d-k
+117. L marq 1-2ct vs2+ d-k ex ex none
+118. RB 1.5-2ct si1+ d-f ex ex none
+119. ECU 1ct+ vs1 ex ex d-k
+120. O emd 2-2.5ct vs2+ ex ex d-k vg+
