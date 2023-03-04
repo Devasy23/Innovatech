@@ -121,7 +121,7 @@ def generate_questions():
 def generate_question():
     question = {}
     question['shape'] = random.choice(shape_list)
-    question['carat'] = random.choice(carat_list)
+    question['carat'] = random.choice(str(carat_list))
     question['color'] = random.choice(color_list)
     question['clarity'] = random.choice(clarity_list)
     question['cut'] = random.choice(cut_list)
