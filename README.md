@@ -35,24 +35,7 @@
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
 
-// Some current statistics about the diamond industry
-We made a chatbot using google Dialogflow for the diamond industry. I
-
-
-
-
-It is useful to design and follow a specific format when writing a problem statement. While there are several options
-for doing this, the following is a simple and straightforward template often used in Business Analysis to maintain
-focus on defining the problem.
-
-- IDEAL: This section is used to describe the desired or “to be” state of the process or product. At large, this section
-  should illustrate what the expected environment would look like once the solution is implemented.
-- REALITY: This section is used to describe the current or “as is” state of the process or product.
-- CONSEQUENCES: This section is used to describe the impacts on the business if the problem is not fixed or improved upon.
-  This includes costs associated with loss of money, time, productivity, competitive advantage, and so forth.
-
-Following this format will result in a workable document that can be used to understand the problem and elicit
-requirements that will lead to a winning solution.
+Our task was to create a conversational AI model using Google Dialogflow that can understand natural language queries for diamonds and generate filtering parameters for a large inventory of diamond data.
 
 ## 💡 Idea / Solution <a name = "idea"></a>
 
