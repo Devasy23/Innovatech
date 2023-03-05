@@ -89,19 +89,17 @@ We intend to integrate our chatbot with virtual reality to enable customers to i
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
 This project was developed by:
 
 [@devansh-shah-11](https://github.com/devansh-shah-11) - Generated test cases and implemented the project on Google Colab for feature extraction.
 
 [@Devasy23](https://github.com/devasy23): Generated test cases and implemented the project on Google Colab for feature extraction.
 
-[@Divycholera98] - Trained the chatbot on various entities and intents and trained on various phrases.
+[@Divycholera98](https://github.com/Divycholera98) - Trained the chatbot on various entities and intents and trained on various phrases.
 
-[@Aaryan-Chokshi] - Trained the chatbot on various entities and intents and trained on various phrases.
+[@Aaryan-Chokshi](https://github.com/Aaryan-Chokshi) - Trained the chatbot on various entities and intents and trained on various phrases.
 
-[@Rahilshah777] - Preprocessed raw data and created code to show analysis final results from the processed query.
+[@Rahilshah777](https://github.com/Rahilshah777) - Preprocessed raw data and created code to show analysis final results from the processed query.
 
 
 We would also like to thank the organizers of the hackathon for providing us with the opportunity to work on this project.
