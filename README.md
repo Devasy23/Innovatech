@@ -54,7 +54,9 @@ Overall, chatbots can help to improve the customer experience, increase sales, a
 ## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
 
 While we made sure that our chatbot is well-trained and as accurate and efficient as possible, there are a few limitations of the same.
+
 The dataset contains values that are common across multiple columns, eg : diamond cut, polish and symmetry all have common attributes, like EX, VG, G, etc. This sometimes causes confusion when they are not explicitly stated.
+
 Furthermore, our chatbot uses fuzzy matching to match the language to the desired parameters 
 
 
