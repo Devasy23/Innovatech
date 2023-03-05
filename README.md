@@ -66,53 +66,46 @@ We intend to integrate our chatbot with virtual reality to enable customers to i
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development
-and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### Prerequisites
+1. Download or clone the project repository to your local machine.
 
-What things you need to install the software and how to install them.
+2. If you want to test the model locally, upload the zip file to Google Dialogflow and use it to test the chatbot.
 
-```
-Give examples
-```
+3. Alternatively, you can use Google Colab to run the project. The code has been implemented with Google Translate API for multi-language support, which extracts parameterized information from the query given to and processed by Dialogflow.
 
-### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+- Note: You may need to set up a Google Cloud account and enable the necessary APIs to use Dialogflow and Google Translate. For more information on how to do this, please refer to the official documentation provided by Google.
 
-Say what the step will be
 
-```
-Give the example
-```
 
-And repeat
 
-```
-until finished
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 
-- [Google Dialogflow](https://dialogflow.cloud.google.com/) - Chatbot Framework
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
+- [Google Dialogflow](https://dialogflow.cloud.google.com/) - A conversational AI platform used for building chatbots and virtual agents
+- [Google Translate API](https://expressjs.com/) - A cloud-based machine translation service provided by Google
+- [Google Colab](https://vuejs.org/) -  for implementation and testing of the model
+
 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors)
-who participated in this project.
+This project was developed by:
 
-## 🎉 Acknowledgments <a name = "acknowledgments"></a>
+[@devansh-shah-11](https://github.com/devansh-shah-11) - Generated test cases and implemented the project on Google Colab for feature extraction.
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
+[@Devasy23](https://github.com/devasy23): Generated test cases and implemented the project on Google Colab for feature extraction.
+
+[@Divycholera98] - Trained the chatbot on various entities and intents and trained on various phrases.
+
+[@Aaryan-Chokshi] - Trained the chatbot on various entities and intents and trained on various phrases.
+
+[@Rahilshah777] - Preprocessed raw data and created code to show analysis final results from the processed query.
+
+
+We would also like to thank the organizers of the hackathon for providing us with the opportunity to work on this project.
+
+
+
+
