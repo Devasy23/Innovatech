@@ -53,17 +53,14 @@ Overall, chatbots can help to improve the customer experience, increase sales, a
 
 ## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
 
-- What are the dependencies of your project?
-- Describe each limitation in detailed but concise terms
-- Explain why each limitation exists
-- Provide the reasons why each limitation could not be overcome using the method(s) chosen to acquire.
-- Assess the impact of each limitation in relation to the overall findings and conclusions of your project, and if
-  appropriate, describe how these limitations could point to the need for further research.
+While we made sure that our chatbot is well-trained and as accurate and efficient as possible, there are a few limitations of the same.
+The dataset contains values that are common across multiple columns, eg : diamond cut, polish and symmetry all have common attributes, like EX, VG, G, etc. This sometimes causes confusion when they are not explicitly stated.
+Furthermore, our chatbot uses fuzzy matching to match the language to the desired parameters 
+
 
 ## 🚀 Future Scope <a name = "future_scope"></a>
 
-Write about what you could not develop during the course of the Hackathon; and about what your project can achieve
-in the future.
+We intend to integrate our chatbot with virtual reality to enable customers to interact with the jewelry in an immersive way. We would also like to train our model more efficiently in different languages to ensure no language barrier remains!
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
