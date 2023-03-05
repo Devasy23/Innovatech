@@ -73,6 +73,8 @@ We intend to integrate our chatbot with virtual reality to enable customers to i
 
 3. Alternatively, you can use Google Colab to run the project. The code has been implemented with Google Translate API for multi-language support, which extracts parameterized information from the query given to and processed by Dialogflow.
 
+## [Deployment link](https://bot.dialogflow.com/bd9f99a2-3bf4-4161-bb34-df386a7fe733) - on WebDemo mode 
+
 
 - Note: You may need to set up a Google Cloud account and enable the necessary APIs to use Dialogflow and Google Translate. For more information on how to do this, please refer to the official documentation provided by Google.
 
