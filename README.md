@@ -35,6 +35,12 @@
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
 
+// Some current statistics about the diamond industry
+We made a chatbot using google Dialogflow for the diamond industry. I
+
+
+
+
 It is useful to design and follow a specific format when writing a problem statement. While there are several options
 for doing this, the following is a simple and straightforward template often used in Business Analysis to maintain
 focus on defining the problem.
@@ -50,10 +56,17 @@ requirements that will lead to a winning solution.
 
 ## 💡 Idea / Solution <a name = "idea"></a>
 
-This section is used to describe potential solutions.
+Our idea is to make a chatbot for the diamond industry. It will bring a revolutionary change because user's can get faster and more personalized recommendations! There are several advantages of chatbots like:
 
-Once the ideal, reality, and consequences sections have been
-completed, and understood, it becomes easier to provide a solution for solving the problem.
+1) Improved Customer Service - There is no need of waiting on call for the receiver to answer. Customer can get instant assistance regarding the shape, size, cut, polish and pricing of the jewellery. This can help to improve customer satisfaction and reduce the workload on customer service representatives.
+
+2) Personalize the shopping experience: We can use data on a customer's browsing history and preferences to offer personalized recommendations for diamond jewelry. This can help to increase sales and improve customer loyalty.
+
+3) Data Analytics - It provides a well-documented data of the demands of each customer so it is easy to track and accordingly maintain stock of the respective jewelry.
+
+4) Efficient marketing: Targetted marketing helps to increase user engagement and sales.
+
+Overall, chatbots can help to improve the customer experience, increase sales, and streamline operations in the diamond industry.
 
 ## ⛓️ Dependencies / Limitations <a name = "limitations"></a>
 
