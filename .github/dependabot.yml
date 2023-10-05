@@ -1,0 +1,6 @@
+version: 2
+update_configs:
+- package_manager: "pip"
+  directory: "/"
+  schedule:
+    interval: "weekly"
