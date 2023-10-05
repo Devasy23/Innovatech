@@ -21,7 +21,7 @@ blinker==1.5
 CacheControl==0.12.11
 cachetools==5.2.0
 camelot-py==0.10.1
-certifi==2022.6.15
+certifi==2023.7.22
 cffi==1.15.1
 chardet==5.0.0
 charset-normalizer==2.1.0
