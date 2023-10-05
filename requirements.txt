@@ -30,7 +30,7 @@ collections-extended==2.0.2
 colorama==0.4.5
 commonmark==0.9.1
 contextlib2==21.6.0
-cryptography==37.0.4
+cryptography==41.0.4
 cvxopt==1.3.0
 cycler==0.11.0
 Cython==0.29.33
